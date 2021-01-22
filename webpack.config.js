@@ -1,8 +1,8 @@
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const webpack = require("webpack");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const path = require("path");
 
-module.exports = {
+const config = {
     // first, declare entry point (root of the bundle and beginning of dependency graph)
     entry: {
         app: './assets/js/script.js',
@@ -52,3 +52,5 @@ module.exports = {
     ],
     mode: 'development'
 };
+
+module.exports = config;
